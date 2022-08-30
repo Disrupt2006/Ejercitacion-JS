@@ -1,4 +1,5 @@
-const alumnos = [
+//Ejercicio 1
+let alumnos = [
 
     //objetos no tienen nombre
     {
@@ -75,3 +76,24 @@ const alumnos = [
 
 ];
 
+
+//Ejercicio 2
+const capitalizar = (s) => {
+    
+    return s[0].toUpperCase() + s.slice(1);
+    
+}
+
+//Ejercicio 3
+//const mostrarAlumno = (s) => { }
+    
+alumnos.forEach((e, i) => {
+
+
+})
+
+    
+
+
+
+//console.log (MostrarAlumno(2));
