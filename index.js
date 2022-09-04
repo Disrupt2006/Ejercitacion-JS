@@ -1,7 +1,7 @@
-//Ejercicio 1
-let alumnos = [
+//  --- Ejercicio 1 ---
 
-    //objetos no tienen nombre
+let alumno = [
+
     {
         nombre: "Juan",
         apellido: "Gomez",
@@ -58,7 +58,7 @@ let alumnos = [
 
     {
         nombre: "Esteban",
-        apellido: "Roriguez",
+        apellido: "Rodriguez",
         dni: "45194576",
         anio: 3,
         curso: "B",
@@ -76,24 +76,51 @@ let alumnos = [
 
 ];
 
+//console.log (alumno);
 
-//Ejercicio 2
+//  --- Ejercicio 2 ---
+
 const capitalizar = (s) => {
     
     return s[0].toUpperCase() + s.slice(1);
     
-}
+};
 
-//Ejercicio 3
-//const mostrarAlumno = (s) => { }
-    
-alumnos.forEach((e, i) => {
+//console.log (capitalizar("hola"));
 
-
-})
-
-    
+//  --- Ejercicio 3 ---
 
 
 
-//console.log (MostrarAlumno(2));
+//  --- Ejercicio 4 ---
+
+const capitalizarAlumnos = alumno.map((e) => {
+    capNom = capitalizar(e.nombre);
+    capAp = capitalizar(e.apellido);
+
+    return [capNom, capAp];
+});
+
+//console.log (capitalizarAlumnos);
+
+//  --- Ejercicio 5 ---
+
+
+
+//  --- Ejercicio 6 ---
+
+const AlumnosAprobados = alumno.filter((e) => e.nota >= 6).map(e => e);
+
+//console.log (AlumnosAprobados);
+
+//  --- Ejercicio 7 ---
+
+const AlumnosCuarto = alumno.filter((e) => e.anio === 4).map(e => e);
+
+//console.log (AlumnosCuarto);
+
+//  --- Ejercicio 8 ---
+
+const AlumnosB = alumno.filter((e) => e.curso === "B").map(e => e);
+
+//console.log(AlumnosB);
