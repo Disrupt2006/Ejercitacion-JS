@@ -91,13 +91,13 @@ const capitalizar = (s) => {
 //  --- Ejercicio 3 ---
 
 const mostrarAlumno = (e) => {
-    console.log(`DNI: ${e.dni}`);
+    console.log(`DNI: ${e.dni.slice(0, 2)}.${e.dni.slice(2, 5)}.${e.dni.slice(5, 8)}`);
     console.log(`Nombre y apellido: ${e.nombre} ${e.apellido}`);
     console.log(`Curso: ${e.anio}°${e.curso}`);
     console.log(`Nota: ${e.nota}`);
 }
 
-console.log(mostrarAlumno(1));
+//mostrarAlumno(alumno[0]);
 
 //  --- Ejercicio 4 ---
 
@@ -114,16 +114,16 @@ const capitalizarAlumnos = alumno.map((e) => {
 
 //  --- Ejercicio 5 ---
 
-//const alumnosReordenados = alumno.map((e) => mostrarAlumno(e));
+const alumnosReordenados = alumno.map((e) => mostrarAlumno(e));
 
 //  --- Ejercicio 6 ---
 
-//const AlumnosAprobados = alumno.filter((e) => e.nota >= 6).map(e => mostrarAlumno(e));
+const AlumnosAprobados = alumno.filter((e) => e.nota >= 6).map(e => mostrarAlumno(e));
 
 //  --- Ejercicio 7 ---
 
-//const AlumnosCuarto = alumno.filter((e) => e.anio === 4).map(e =>  mostrarAlumno(e));
+const AlumnosCuarto = alumno.filter((e) => e.anio === 4).map(e =>  mostrarAlumno(e));
 
 //  --- Ejercicio 8 ---
 
-//const AlumnosB = alumno.filter((e) => e.curso === "B").map(e => mostrarAlumno(e));
+const AlumnosB = alumno.filter((e) => e.curso === "B").map(e => mostrarAlumno(e));
