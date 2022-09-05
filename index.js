@@ -5,7 +5,7 @@ let alumno = [
     {
         nombre: "Juan",
         apellido: "Gomez",
-        dni: "46345678",
+        dni: 46345678,
         anio: 4,
         curso: "A",
         nota: 8,
@@ -14,7 +14,7 @@ let alumno = [
     {
         nombre: "Juan",
         apellido: "Perez",
-        dni: "46349576",
+        dni: 46349576,
         anio: 4,
         curso: "A",
         nota: 9,
@@ -23,7 +23,7 @@ let alumno = [
     {
         nombre: "Ambar",
         apellido: "Jaichenko",
-        dni: "46486024",
+        dni: 46486024,
         anio: 5,
         curso: "A",
         nota: 10,
@@ -32,7 +32,7 @@ let alumno = [
     {
         nombre: "Matias",
         apellido: "Fridman",
-        dni: "47185035",
+        dni: 47185035,
         anio: 5,
         curso: "A",
         nota: 4,
@@ -41,7 +41,7 @@ let alumno = [
     {
         nombre: "German",
         apellido: "Prokopiec",
-        dni: "47194769",
+        dni: 47194769,
         anio: 4,
         curso: "B",
         nota: 3,
@@ -50,7 +50,7 @@ let alumno = [
     {
         nombre: "Caro",
         apellido: "Orbuch",
-        dni: "47936295",
+        dni: 47936295,
         anio: 4,
         curso: "B",
         nota: 1,
@@ -59,7 +59,7 @@ let alumno = [
     {
         nombre: "Esteban",
         apellido: "Rodriguez",
-        dni: "45194576",
+        dni: 45194576,
         anio: 3,
         curso: "B",
         nota: 5,
@@ -68,7 +68,7 @@ let alumno = [
     {
         nombre: "Ulises",
         apellido: "Vazquez",
-        dni: "45195275",
+        dni: 45195275,
         anio: 3,
         curso: "B",
         nota: 7,
@@ -87,7 +87,7 @@ const capitalizar = (s) => {
 //  --- Ejercicio 3 ---
 
 const mostrarAlumno = (e) => {
-    console.log(`DNI: ${e.dni.slice(0, 2)}.${e.dni.slice(2, 5)}.${e.dni.slice(5, 8)}`);
+    console.log(`DNI: ${e.dni.toString().slice(0, 2)}.${e.dni.toString().slice(2, 5)}.${e.dni.toString().slice(5, 8)}`);
     console.log(`Nombre y apellido: ${e.nombre} ${e.apellido}`);
     console.log(`Curso: ${e.anio}°${e.curso}`);
     console.log(`Nota: ${e.nota}`);
