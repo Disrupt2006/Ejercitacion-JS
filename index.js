@@ -76,8 +76,6 @@ let alumno = [
 
 ];
 
-//console.log (alumno);
-
 //  --- Ejercicio 2 ---
 
 const capitalizar = (s) => {
@@ -85,8 +83,6 @@ const capitalizar = (s) => {
     return s[0].toUpperCase() + s.slice(1);
     
 };
-
-//console.log (capitalizar("hola"));
 
 //  --- Ejercicio 3 ---
 
@@ -96,8 +92,6 @@ const mostrarAlumno = (e) => {
     console.log(`Curso: ${e.anio}°${e.curso}`);
     console.log(`Nota: ${e.nota}`);
 }
-
-//mostrarAlumno(alumno[0]);
 
 //  --- Ejercicio 4 ---
 
@@ -109,8 +103,6 @@ const capitalizarAlumnos = alumno.map((e) => {
 
     return nuevo;
 });
-
-//console.log (capitalizarAlumnos);
 
 //  --- Ejercicio 5 ---
 
